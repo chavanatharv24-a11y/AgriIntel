@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+motor
+pydantic[email]>=2.0.0
+pydantic-settings
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart
+certifi
+google-generativeai
+bcrypt==3.2.0
+scikit-learn
+pandas
+numpy
+joblib
+pytest
+requests
