@@ -93,7 +93,7 @@ AgriIntel is a full-stack, AI-powered agricultural intelligence platform designe
    ```bash
    npm run dev
    ```
-   *(The frontend will run on `http://localhost:5173`)*
+
 
 ---
 
