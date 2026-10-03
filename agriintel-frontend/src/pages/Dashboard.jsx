@@ -87,7 +87,7 @@ const Dashboard = () => {
 
   return (
     <div className="feature-container">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '40px' }}>
+      <div className="dashboard-header">
         <div>
           <h1 className="auth-title" style={{ margin: 0 }}>Farm Dashboard</h1>
           <p className="auth-subtitle">Overview of your farm's health</p>
@@ -98,7 +98,7 @@ const Dashboard = () => {
       </div>
       
       <div className="auth-container" style={{ maxWidth: '100%', marginBottom: '30px', animation: 'none', opacity: 1, transform: 'none' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+        <div className="dashboard-subheader">
           <h2 style={{ marginTop: 0, marginBottom: 0 }}>Latest Farm Reading</h2>
           <Link to="/log-reading" className="submit-btn" style={{ textDecoration: 'none', width: 'auto', padding: '8px 16px', fontSize: '0.875rem' }}>
             Log New Farm Reading

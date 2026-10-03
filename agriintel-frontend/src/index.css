@@ -644,22 +644,25 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255,255,255,0.1);
+  background: rgba(11, 43, 38, 0.05);
   padding: 8px 12px;
   border-radius: 12px;
+  color: var(--primary);
 }
 
 .language-selector select {
   background: transparent;
-  color: white;
+  color: var(--primary);
   border: none;
   outline: none;
   font-family: inherit;
   font-size: 0.95rem;
   cursor: pointer;
+  font-weight: 500;
 }
 .language-selector select option {
-  background: #061e14;
+  background: #FFFFFF;
+  color: var(--primary);
 }
 
 .chat-window {
@@ -827,3 +830,129 @@ body {
   color: rgba(255,255,255,0.3);
   cursor: not-allowed;
 }
+
+/* =========================================
+   Dashboard Specific Styles
+   ========================================= */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   Responsive Design / Mobile Adjustments
+   ========================================= */
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 900px) {
+  .farm-sidebar {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 16px 20px;
+    gap: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .app-content {
+    padding: 24px 16px;
+  }
+
+  .auth-container {
+    padding: 32px 24px;
+    max-width: 100%;
+  }
+
+  .assistant-container {
+    height: calc(100vh - 160px); /* adjust for taller stacked navbar */
+  }
+
+  .chat-message {
+    max-width: 90%;
+  }
+
+  .farm-map-container {
+    margin: -24px -16px; /* Match new app-content padding */
+    height: calc(100vh - 120px);
+  }
+
+  .farm-sidebar {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--surface-border);
+    padding: 24px 20px;
+  }
+
+  .score-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard-header,
+  .dashboard-subheader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .chat-input-area {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-item {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .auth-title {
+    font-size: 2.5rem;
+  }
+
+  .score-value {
+    font-size: 2rem;
+  }
+
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .farm-title {
+    font-size: 1.5rem;
+  }
+  
+  .assistant-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+

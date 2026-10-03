@@ -51,7 +51,7 @@ const Signup = () => {
       {error && <div className="error-message">{error}</div>}
       
       <form onSubmit={handleSubmit} className="auth-form" style={{ gap: '16px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+        <div className="form-row">
           <div className="input-group">
             <label htmlFor="name">Name</label>
             <input id="name" name="name" type="text" className="input-field" placeholder="Jane Doe" value={formData.name} onChange={handleChange} required disabled={isLoading} />
@@ -72,7 +72,7 @@ const Signup = () => {
           <input id="password" name="password" type="password" className="input-field" placeholder="••••••••" value={formData.password} onChange={handleChange} required disabled={isLoading} />
         </div>
         
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
+        <div className="form-row">
           <div className="input-group">
             <label htmlFor="cropType">Crop Type</label>
             <input id="cropType" name="cropType" type="text" className="input-field" placeholder="Wheat" value={formData.cropType} onChange={handleChange} disabled={isLoading} />
