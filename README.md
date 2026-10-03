@@ -78,7 +78,7 @@ AgriIntel is a full-stack, AI-powered agricultural intelligence platform designe
    ```bash
    python -m uvicorn app.main:app --reload
    ```
-   *(The backend will run on `http://127.0.0.1:8000`)*
+  
 
 ### Frontend Setup
 1. Navigate to the frontend directory:
@@ -101,13 +101,7 @@ AgriIntel is a full-stack, AI-powered agricultural intelligence platform designe
 
 The backend includes a comprehensive `pytest` integration suite that validates end-to-end functionality across Authentication, Sensors, AI Predictions, Finance, and Notifications.
 
-To run the tests, ensure your local FastAPI server is running, then execute:
-```bash
-cd agriintel-backend
-pytest tests/test_api.py -v
-```
 
----
 
 ## 🌐 Deployment Architecture
 
@@ -116,4 +110,3 @@ AgriIntel is configured for modern serverless deployment:
 - **Frontend:** Designed for zero-config deployment on **Vercel**.
 - **Database:** Fully managed on **MongoDB Atlas**.
 
-*(Ensure `VITE_API_URL` is set in Vercel to point to the live Render backend URL.)*
