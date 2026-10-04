@@ -44,6 +44,7 @@ h1, h2, h3, .auth-title, .nav-brand {
 body {
   margin: 0;
   width: 100%;
+  touch-action: manipulation;
 }
 
 #root {
