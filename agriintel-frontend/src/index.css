@@ -41,9 +41,14 @@ h1, h2, h3, .auth-title, .nav-brand {
   text-decoration: none;
 }
 
-body {
+html, body {
   margin: 0;
+  padding: 0;
   width: 100%;
+  overflow-x: hidden;
+}
+
+body {
   touch-action: manipulation;
 }
 
